@@ -8,3 +8,5 @@ The application will be able to create multiple todo lists and save them to the 
 It will utilise all CRUD functionality 
 
 Tec that I want to Use is Flask, as well as Html and css to build he front-end
+---------
+since I dont know flask I will be iniatilly adding tutorial code to this, So I can track my progress.
