@@ -8,12 +8,12 @@
 </head>
 <body>
     <h1>Home Page!</h1>
-    <p>{{content}}</p> 
-    
-    <!--to dynamically render information we use this special expression {{}} -- lets us type any variable, information we need to put in the template, example "content"-->
-    <!--So when we define content in this {{}}, what it allows us to do is pass a value that will replace "content" from the backend -- move back to the script-->
-    
+    {% for x in names%} <!--  Inside these we can write python code -->
+        <p>{{x}}</p>
+    {%endfor%} 
 </body>
 </html>
 
 <!--How can we render this html page, so basically what we do is, we go to our python script and return "render_template("name of htmlfile")" in the corresponding function-->
+
+<!---->

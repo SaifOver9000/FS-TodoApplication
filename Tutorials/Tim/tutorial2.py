@@ -10,7 +10,13 @@ app = Flask(__name__)
 
 @app.route("/<name>") 
 def home(name):
-    return render_template("index.html", content=name) #this will replace the content in the template, with whatever we assign to it.
+    # return render_template("index.html")
+    # return render_template("index.html", content=name, rew=49) #this will replace the content in the template, with whatever we assign to it.
+#to dynamically render information we use this special expression {{}} -- lets us type any variable, information we need to put in the template, example "content"
+#So when we define content in this {{}}, what it allows us to do is pass a value that will replace "content" from the backend -- move back to the script
+#{{}} this is interpreted as a variable
 
+#how to pass in a list  
+    return render_template("index.html", names=["james", "drake", "baby"])
 if __name__ == "__main__":
     app.run()
