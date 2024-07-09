@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
-    
-</head>
-<body>
-    <h1>Home Page!</h1>
-    {% for x in names%} <!--  Inside these we can write python code -->
-        <p>{{x}}</p>
-    {%endfor%} 
-</body>
-</html>
-
-<!--How can we render this html page, so basically what we do is, we go to our python script and return "render_template("name of htmlfile")" in the corresponding function-->
-
-<!---->
+<!DOCTYPE html>  <!--This is a child template that inherites from the base template-->
+{%extends "base.html"%}
+{%block title%}Home page{%endblock%}
+{%block content%}
+<h1>Test</h1>
+{%endblock%}
